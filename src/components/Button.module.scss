@@ -1,0 +1,25 @@
+.btn {
+  padding: 1.2rem 1.6rem;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  outline: none;
+  border-radius: 90px;
+  cursor: pointer;
+
+  &--primary {
+    background-color: var(--color-primary-1);
+    color: var(--color-neutral-8);
+  }
+
+  &--secondary {
+    background-color: inherit;
+    color: var(--color-neutral-2);
+    border: 2px solid #E6E8EC;
+  }
+}
+
+.btn[data-size='lg'] {
+  padding: 1.6rem 0;
+}

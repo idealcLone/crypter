@@ -1,0 +1,57 @@
+.navbar {
+  background-color: var(--color-neutral-8);
+  display: flex;
+  justify-content: space-between;
+  height: 8rem;
+  padding: 2rem 0;
+}
+
+.left-content {
+  display: flex;
+  align-items: center;
+  gap: 3.2rem;
+}
+
+.logo-box {
+  display: inline-flex;
+  align-items: center;
+  gap: .8rem;
+}
+
+.logo {
+}
+
+.divider {
+  width: 2px;
+  height: 100%;
+  background-color: var(--color-neutral-6);
+}
+
+.link {
+  color: var(--color-neutral-4);
+  text-decoration: none;
+}
+
+.right-content {
+  display: flex;
+  align-items: center;
+  gap: 3.5rem;
+}
+
+.notification {
+  position: relative;
+  cursor: pointer;
+}
+
+.status-icon {
+  display: block;
+  position: absolute;
+  top: 0;
+  right: 0;
+  transform: translate(50%, -50%);
+}
+
+.buttons {
+  display: flex;
+  gap: 1.2rem;
+}
