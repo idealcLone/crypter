@@ -1,0 +1,11 @@
+@mixin border-green {
+  padding: .8rem;
+  border: 2px solid var(--color-primary-4);
+  color: var(--color-primary-4);
+  border-radius: 4px;
+}
+
+@mixin container {
+  width: 80%;
+  margin: 0 auto;
+}

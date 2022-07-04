@@ -1,0 +1,165 @@
+@use '../assets/sass/mixins';
+
+.feed {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  padding-bottom: 12.8rem;
+  @include mixins.container;
+}
+
+.main {
+  grid-row: 1 / 2;
+  grid-column: 1 / span 5;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+
+  &__image {
+    display: block;
+    width: 100%;
+    border-radius: 12px;
+    height: 33.3vw;
+    object-fit: cover;
+  }
+
+  &__description {
+    display: flex;
+    gap: 1.6rem;
+    align-items: center;
+  }
+
+  &__info,
+  &__bid {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__info {
+    margin-right: auto;
+  }
+
+  &__avatar {
+    width: 4.8rem;
+    height: 4.8rem;
+  }
+
+  &__bid-label {
+    color: var(--color-neutral-4);
+  }
+
+  &__bid-price {
+    @include mixins.border-green;
+  }
+}
+
+.item {
+  flex: 1;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-column-gap: 2.5rem;
+
+  &__image {
+    grid-column: 1 / 3;
+    width: 100%;
+  }
+
+  &__description {
+    width: 100%;
+    grid-column: 3 / 5;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+  }
+
+  &__list {
+    height: 100%;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 3.2rem;
+    grid-column: 6 / span 4;
+    padding-left: 4rem;
+  }
+
+  &__pricing {
+    display: flex;
+    align-items: center;
+    gap: 1.1rem;
+    padding-top: .8rem;
+    padding-bottom: 1.6rem;
+  }
+
+  &__creator {
+    width: 2.4rem;
+  }
+
+  &__price {
+    @include mixins.border-green;
+  }
+
+  &__count {
+    color: var(--color-neutral-4);
+  }
+}
+
+.creators {
+  grid-column: 10 / 13;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: .8rem;
+}
+
+.creator {
+  display: flex;
+  gap: 1.6rem;
+  align-items: center;
+  padding-bottom: 2.4rem;
+
+  &:not(:last-child) {
+    border-bottom: 1px solid var(--color-neutral-6);
+  }
+
+  &__list {
+    margin-top: 2.4rem;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 2.4rem;
+  }
+
+  &__avatar {
+    position: relative;
+  }
+
+  &__img {
+    width: 5.6rem;
+    height: 5.6rem;
+  }
+
+  &__sold {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 3.2rem;
+    height: 3.2rem;
+    border-radius: 50%;
+    background-color: var(--color-neutral-2);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--color-neutral-8);
+    border: 4px solid #FCFCFD;
+    transform: translate(-25%, -25%);
+  }
+
+  &__price {
+    display: flex;
+    gap: 2px;
+
+    :last-child {
+      color: var(--color-neutral-4);
+    }
+  }
+}

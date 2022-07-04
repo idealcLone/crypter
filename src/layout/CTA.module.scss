@@ -1,0 +1,41 @@
+.cta {
+  padding: 8rem 16rem;
+  background-color: var(--color-neutral-8);
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid var(--color-neutral-6);
+  border-top: 1px solid var(--color-neutral-6);
+
+  &__hero {
+    width: 55rem;
+    display: flex;
+    flex-direction: column;
+
+    h2 {
+      margin-bottom: 2rem;
+    }
+
+    p {
+      margin-bottom: 4rem;
+      color: var(--color-neutral-4);
+    }
+  }
+
+  &__actions {
+    display: flex;
+    align-items: center;
+    gap: .8rem;
+  }
+
+  &__hairline {
+    margin-bottom: 1.2rem;
+    color: var(--color-neutral-4);
+  }
+
+  &__image {
+    flex: 1;
+    height: 64rem;
+    background-image: url(../assets/img/cta.png);
+    background-size: cover;
+  }
+}

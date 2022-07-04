@@ -1,13 +1,3 @@
 html {
   font-size: 62.5%;
 }
-
-:global(#root) {
-  width: 80%;
-  margin: 0 auto;
-
-  //& > * {
-  //  display: grid;
-  //  grid-template-columns: repeat(12, 1fr);
-  //}
-}

@@ -5,15 +5,15 @@ import classes from './Button.module.scss';
 
 type PropsType = {
   variant: string;
-  className: string;
-  size: string;
+  className?: string;
+  size?: string;
   children: React.ReactNode;
 };
 
 export const Button: React.FC<PropsType> = ({
   variant,
   className = 'button-2',
-  size,
+  size = 'md',
   children,
 }) => {
   return (

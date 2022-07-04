@@ -1,0 +1,15 @@
+:global {
+  .label {
+    &--green {
+      padding: .8rem;
+      border: 2px solid var(--color-primary-4);
+      color: var(--color-primary-4);
+
+      font-family: var(--font-secondary);
+      font-weight: 700;
+      font-size: 1.2rem;
+      line-height: 1;
+      text-transform: uppercase;
+    }
+  }
+}

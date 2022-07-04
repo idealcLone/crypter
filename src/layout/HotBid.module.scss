@@ -1,0 +1,86 @@
+@use '../assets/sass/mixins';
+
+.hot-bid {
+  @include mixins.container;
+  padding: 12.8rem 0;
+  display: flex;
+  flex-direction: column;
+  gap: 6.4rem;
+
+  &__header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__navigator {
+    display: flex;
+    gap: 2rem;
+
+    img {
+      cursor: pointer;
+    }
+  }
+
+  &__main {
+    display: flex;
+    gap: 3.2rem;
+  }
+
+  &__card {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+  }
+
+  &__img {
+    width: 100%;
+    border-radius: 12px;
+  }
+}
+
+.card {
+  &__description {
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+  }
+
+  &__header,
+  &__body,
+  &__footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  &__highest-bid {
+    display: flex;
+    align-items: center;
+    gap: .5rem;
+  }
+
+  &__body {
+    border-bottom: 1px solid var(--color-neutral-6);
+    padding-bottom: .65rem;
+  }
+
+  &__price {
+    @include mixins.border-green;
+  }
+
+  &__creators {
+    display: flex;
+
+    & img {
+      width: 3.4rem;
+      height: 3.4rem;
+      border: 5px solid #fff;
+      border-radius: 50%;
+
+      &:not(:first-child) {
+        margin-left: -1rem;
+      }
+    }
+  }
+}

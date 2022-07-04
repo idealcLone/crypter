@@ -1,9 +1,13 @@
+@use '../assets/sass/mixins';
+
 .navbar {
   background-color: var(--color-neutral-8);
   display: flex;
   justify-content: space-between;
   height: 8rem;
   padding: 2rem 0;
+
+  @include mixins.container;
 }
 
 .left-content {
