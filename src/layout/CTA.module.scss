@@ -6,8 +6,16 @@
   border-bottom: 1px solid var(--color-neutral-6);
   border-top: 1px solid var(--color-neutral-6);
 
+  @media screen and (max-width: 1200px) {
+    padding: 8rem;
+  }
+
+  @media screen and (max-width: 800px) {
+    flex-direction: column;
+  }
+
   &__hero {
-    width: 55rem;
+    flex: 1;
     display: flex;
     flex-direction: column;
 
@@ -19,12 +27,20 @@
       margin-bottom: 4rem;
       color: var(--color-neutral-4);
     }
+
+    @media screen and (max-width: 800px) {
+      text-align: center;
+    }
   }
 
   &__actions {
     display: flex;
     align-items: center;
     gap: .8rem;
+
+    @media screen and (max-width: 800px) {
+      justify-content: center;
+    }
   }
 
   &__hairline {
@@ -37,5 +53,13 @@
     height: 64rem;
     background-image: url(../assets/img/cta.png);
     background-size: cover;
+
+    @media screen and (max-width: 1200px) {
+      height: 54rem;
+    }
+
+    @media screen and (max-width: 800px) {
+      display: none;
+    }
   }
 }

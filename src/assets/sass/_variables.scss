@@ -36,4 +36,12 @@
   // FONTS
   --font-primary: 'DM Sans', sans-serif;
   --font-secondary: 'Poppins', sans-serif;
+
+
+  // BREAKPOINTS
+  --bp-largest: 75em;      // 1200px
+  --bp-large: 62.5em;      // 1000px
+  --bp-medium: 50em;       // 800px
+  --bp-small: 37.5em;      // 600px
+  --bp-smallest: 23.4em;   // 375px
 }

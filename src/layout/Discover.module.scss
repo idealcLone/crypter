@@ -2,6 +2,10 @@
   padding: 12.8rem 16rem;
   background-color: var(--color-neutral-8);
 
+  @media screen and (max-width: 1200px) {
+    padding: 11.2rem 8rem;
+  }
+
   &__head {
     margin-top: 8rem;
     display: flex;
@@ -10,6 +14,13 @@
     padding-bottom: 3.2rem;
     margin-bottom: 3.2rem;
     border-bottom: 1px solid var(--color-neutral-6);
+
+    @media screen and (max-width: 600px) {
+      gap: 3.2rem;
+      > div {
+        flex: 1;
+      }
+    }
   }
 
   &__list {
@@ -17,11 +28,29 @@
     display: flex;
     align-items: center;
     gap: 3.6rem;
+
+    @media screen and (max-width: 600px) {
+      display: none;
+    }
   }
 
   &__list-item {
     color: var(--color-neutral-4);
     cursor: pointer;
+
+    @media screen and (max-width: 1000px) {
+      &:nth-child(5n),
+      &:nth-child(6n),
+      &:nth-child(7n) {
+        display: none;
+      }
+    }
+
+    @media screen and (max-width: 800px) {
+      &:not(:first-child) {
+        display: none;
+      }
+    }
 
     &:first-child {
       background-color: var(--color-neutral-3);
@@ -38,6 +67,24 @@
     & > * {
       flex: 1;
     }
+
+    @media screen and (max-width: 1000px) {
+      div:nth-child(3n) {
+        display: none;
+      }
+    }
+
+    @media screen and (max-width: 800px) {
+      div:nth-child(4n) {
+        display: none;
+      }
+    }
+
+    @media screen and (max-width: 500px) {
+      div:nth-child(2n) {
+        display: none;
+      }
+    }
   }
 
   &__main {
@@ -49,6 +96,18 @@
     grid-template-columns: repeat(4, 1fr);
     grid-column-gap: 3.2rem;
     grid-row-gap: 5rem;
+
+    @media screen and (max-width: 1000px) {
+      grid-template-columns: repeat(3, 1fr);
+    }
+
+    @media screen and (max-width: 800px) {
+      grid-template-columns: repeat(2, 1fr);
+    }
+
+    @media screen and (max-width: 600px) {
+      grid-template-columns: 1fr;
+    }
   }
 
   &__loading {

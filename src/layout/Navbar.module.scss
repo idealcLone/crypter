@@ -36,10 +36,21 @@
   text-decoration: none;
 }
 
+.divider,
+.link {
+  @media screen and (max-width: 1100px) {
+    display: none;
+  }
+}
+
 .right-content {
   display: flex;
   align-items: center;
   gap: 3.5rem;
+
+  @media screen and (max-width: 1100px) {
+    gap: 2rem;
+  }
 }
 
 .notification {

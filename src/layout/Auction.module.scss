@@ -2,9 +2,16 @@
 
 .auction {
   display: grid;
-  grid-template-columns: repeat(12, 1fr);
+  grid-template-columns: [col-start] repeat(6, 1fr) [col-center] repeat(6, 1fr) [col-end];
+  grid-column-gap: 3.2rem;
+  grid-row-gap: 3.2rem;
   padding: 13.6rem 0;
   @include mixins.container;
+
+  @media screen and (max-width: 1200px) {
+    grid-template-columns: [col-start] repeat(4, 1fr) [col-center] repeat(4, 1fr) [col-end];
+    padding: 11.2rem 0;
+  }
 }
 
 .image-wrapper {
@@ -13,6 +20,22 @@
   grid-column: 1 / span 7;
   border-radius: 16px;
   overflow: hidden;
+
+  @media screen and (max-width: 1200px) {
+    grid-column: 1 / span 5;
+  }
+
+  @media screen and (max-width: 900px) {
+    grid-row: 1 / 2;
+    grid-column: col-start / col-end;
+    height: 70rem;
+  }
+
+  @media screen and (max-width: 600px) {
+    grid-row: 1 / 2;
+    grid-column: col-start / col-end;
+    height: 50rem;
+  }
 }
 
 .image {
@@ -23,21 +46,39 @@
 }
 
 .info {
-  grid-column: 9 / -1;
+  grid-column: 8 / -1;
   display: flex;
   flex-direction: column;
   gap: 4rem;
+
+  @media screen and (max-width: 1200px) {
+    grid-column: 6 / -1;
+  }
+
+  @media screen and (max-width: 900px) {
+    grid-row: 2 / 3;
+    grid-column: col-start / col-end;
+  }
 }
 
 .description {
   display: inline-flex;
   flex-direction: column;
   gap: 2rem;
+
+  @media screen and (max-width: 900px) {
+    text-align: center;
+  }
 }
 
 .creators {
   display: flex;
   gap: 6.5rem;
+
+  @media screen and (max-width: 900px) {
+    text-align: start;
+    justify-content: center;
+  }
 }
 
 .creator {
