@@ -2,20 +2,20 @@ import React from 'react';
 
 import classes from './Feed.module.scss';
 import classNames from 'classnames';
-import { Button } from '../components/Button';
+import { Button } from '../Button';
 
 export const Feed: React.FC = () => {
   return (
     <div className={classes['feed']}>
       <div className={classes['main']}>
         <img
-          src="../assets/img/feed-main-image.png"
+          src="../../assets/img/feed-main-image.png"
           alt="Feed Main item"
           className={classes['main__image']}
         />
         <div className={classes['main__description']}>
           <img
-            src="../assets/img/avatar-1.png"
+            src="../../assets/img/avatar-1.png"
             alt="Main item avatar"
             className={classes['main__avatar']}
           />
@@ -36,7 +36,7 @@ export const Feed: React.FC = () => {
       <ul className={classes['item__list']}>
         <li className={classes['item']}>
           <img
-            src="../assets/img/feed-sub-1.png"
+            src="../../assets/img/feed-sub-1.png"
             alt="Feed sub 1"
             className={classes['item__image']}
           />
@@ -44,7 +44,7 @@ export const Feed: React.FC = () => {
             <h4 className="heading--body-2-bold">ETH never die</h4>
             <div className={classes['item__pricing']}>
               <img
-                src="../assets/img/avatar-1.png"
+                src="../../assets/img/avatar-1.png"
                 alt="Creator avatar"
                 className={classes['item__creator']}
               />
@@ -62,7 +62,7 @@ export const Feed: React.FC = () => {
         </li>
         <li className={classes['item']}>
           <img
-            src="../assets/img/feed-sub-2.png"
+            src="../../assets/img/feed-sub-2.png"
             alt="Feed sub 2"
             className={classes['item__image']}
           />
@@ -70,7 +70,7 @@ export const Feed: React.FC = () => {
             <h4 className="heading--body-2-bold">Future coming soon</h4>
             <div className={classes['item__pricing']}>
               <img
-                src="../assets/img/avatar-1.png"
+                src="../../assets/img/avatar-1.png"
                 alt="Creator avatar"
                 className={classes['item__creator']}
               />
@@ -86,7 +86,7 @@ export const Feed: React.FC = () => {
         </li>
         <li className={classes['item']}>
           <img
-            src="../assets/img/feed-sub-3.png"
+            src="../../assets/img/feed-sub-3.png"
             alt="Feed sub 3"
             className={classes['item__image']}
           />
@@ -94,7 +94,7 @@ export const Feed: React.FC = () => {
             <h4 className="heading--body-2-bold">Elon Musk silver coin 3d print</h4>
             <div className={classes['item__pricing']}>
               <img
-                src="../assets/img/avatar-1.png"
+                src="../../assets/img/avatar-1.png"
                 alt="Creator avatar"
                 className={classes['item__creator']}
               />
@@ -115,7 +115,7 @@ export const Feed: React.FC = () => {
           <li className={classes['creator']}>
             <div className={classes['creator__avatar']}>
               <img
-                src="../assets/img/avatar-1.png"
+                src="../../assets/img/avatar-1.png"
                 alt="Creator avatar"
                 className={classes['creator__img']}
               />
@@ -136,7 +136,7 @@ export const Feed: React.FC = () => {
           <li className={classes['creator']}>
             <div className={classes['creator__avatar']}>
               <img
-                src="../assets/img/avatar-2.png"
+                src="../../assets/img/avatar-2.png"
                 alt="Creator avatar"
                 className={classes['creator__img']}
               />
@@ -157,7 +157,7 @@ export const Feed: React.FC = () => {
           <li className={classes['creator']}>
             <div className={classes['creator__avatar']}>
               <img
-                src="../assets/img/avatar-3.png"
+                src="../../assets/img/avatar-3.png"
                 alt="Creator avatar"
                 className={classes['creator__img']}
               />
@@ -178,7 +178,7 @@ export const Feed: React.FC = () => {
           <li className={classes['creator']}>
             <div className={classes['creator__avatar']}>
               <img
-                src="../assets/img/avatar-4.png"
+                src="../../assets/img/avatar-4.png"
                 alt="Creator avatar"
                 className={classes['creator__img']}
               />

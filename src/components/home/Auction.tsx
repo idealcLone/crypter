@@ -2,13 +2,13 @@ import React from 'react';
 
 import classes from './Auction.module.scss';
 import classNames from 'classnames';
-import { Button } from '../components/Button';
+import { Button } from '../Button';
 
 export const Auction: React.FC = () => {
   return (
     <section className={classes['auction']}>
       <div className={classes['image-wrapper']}>
-        <img src="../assets/img/auction.png" alt="Auction Image" className={classes['image']} />
+        <img src="../../assets/img/auction.png" alt="Auction Image" className={classes['image']} />
       </div>
       <div className={classes['info']}>
         <div className={classes['description']}>
@@ -16,7 +16,7 @@ export const Auction: React.FC = () => {
           <div className={classes['creators']}>
             <div className={classNames(classes['creator'], classes['creator--1'])}>
               <img
-                src="../assets/img/avatar-1.png"
+                src="../../assets/img/avatar-1.png"
                 alt="Creator Avatar"
                 className={classes['creator-avatar']}
               />
@@ -29,7 +29,7 @@ export const Auction: React.FC = () => {
             </div>
             <div className={classNames(classes['creator'], classes['creator--2'])}>
               <img
-                src="../assets/icons/stopline.svg"
+                src="../../assets/icons/stopline.svg"
                 alt="Stop Line"
                 className={classes['creator-avatar']}
               />
@@ -77,14 +77,14 @@ export const Auction: React.FC = () => {
         <div className={classes['arrows']}>
           <div className={classes['arrow-left-box']}>
             <img
-              src="../assets/icons/arrow-left.svg"
+              src="../../assets/icons/arrow-left.svg"
               alt="Arrow left"
               className={classes['arrow-left']}
             />
           </div>
           <div className={classes['arrow-right-box']}>
             <img
-              src="../assets/icons/arrow-right.svg"
+              src="../../assets/icons/arrow-right.svg"
               alt="Arrow right"
               className={classes['arrow-right']}
             />

@@ -78,6 +78,11 @@
     gap: 2.4rem;
     color: var(--color-neutral-4);
   }
+
+  &__link {
+    text-decoration: none;
+    color: currentColor;
+  }
 }
 
 .newsletter {

@@ -1,4 +1,4 @@
-@use '../assets/sass/mixins';
+@use '../../assets/sass/mixins';
 
 .hot-bid {
   @include mixins.container;
@@ -38,20 +38,23 @@
       grid-template-rows: repeat(4, 1fr);
     }
   }
+}
 
-  &__card {
-    display: flex;
-    flex-direction: column;
-    gap: 2rem;
-  }
+.card {
+  position: absolute;
+  left: 0;
+  height: 45rem;
+  width: 26rem;
+  flex: 0 1 26rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
 
   &__img {
     width: 100%;
     border-radius: 12px;
   }
-}
 
-.card {
   &__description {
     display: flex;
     flex-direction: column;
@@ -95,4 +98,8 @@
       }
     }
   }
+}
+
+.slider {
+  height: 50rem;
 }

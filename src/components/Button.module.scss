@@ -1,5 +1,4 @@
 .btn {
-  padding: 1.2rem 1.6rem;
   display: inline-flex;
   align-items: center;
   justify-content: center;
@@ -17,14 +16,18 @@
   &--secondary {
     background-color: inherit;
     color: var(--color-neutral-2);
-    border: 2px solid #E6E8EC;
+    border: 2px solid var(--color-neutral-5);
   }
-}
 
-.btn[data-size='lg'] {
-  padding: 1.6rem 0;
-}
+  &--sm {
+    padding: .8rem 1.2rem;
+  }
 
-.btn[data-size='sm'] {
-  padding: .8rem 1.2rem;
+  &--md {
+    padding: 1.2rem 1.6rem;
+  }
+
+  &--lg {
+    padding: 1.6rem 0;
+  }
 }

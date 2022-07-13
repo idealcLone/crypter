@@ -1,6 +1,5 @@
-import classnames from 'classnames';
 import React from 'react';
-
+import classnames from 'classnames';
 import classes from './Button.module.scss';
 
 type PropsType = {
@@ -18,12 +17,12 @@ export const Button: React.FC<PropsType> = ({
 }) => {
   return (
     <button
-      className={
-        variant === 'primary'
-          ? classnames(classes['btn'], classes['btn--primary'], `heading--${className}`)
-          : classnames(classes['btn'], classes['btn--secondary'], `heading--${className}`)
-      }
-      data-size={size}
+      className={classnames(
+        classes['btn'],
+        classes[`btn--${variant}`],
+        classes[`btn--${size}`],
+        `heading--${className}`
+      )}
     >
       {children}
     </button>

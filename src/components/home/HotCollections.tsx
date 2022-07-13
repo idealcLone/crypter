@@ -10,22 +10,22 @@ export const HotCollections: React.FC = () => {
       <div className={classes['collections']}>
         <div className={classNames(classes['collection'], classes['collection--1'])}>
           <img
-            src="../assets/img/collection-1-1.png"
+            src="../../assets/img/collection-1-1.png"
             alt="Collection 1 Item 1"
             className={classNames(classes['collection__img'], classes['collection__img--1'])}
           />
           <img
-            src="../assets/img/collection-1-2.png"
+            src="../../assets/img/collection-1-2.png"
             alt="Collection 1 Item 2"
             className={classNames(classes['collection__img'], classes['collection__img--2'])}
           />
           <img
-            src="../assets/img/collection-1-3.png"
+            src="../../assets/img/collection-1-3.png"
             alt="Collection 1 Item 3"
             className={classNames(classes['collection__img'], classes['collection__img--3'])}
           />
           <img
-            src="../assets/img/collection-1-4.png"
+            src="../../assets/img/collection-1-4.png"
             alt="Collection 1 Item 4"
             className={classNames(classes['collection__img'], classes['collection__img--4'])}
           />
@@ -35,7 +35,7 @@ export const HotCollections: React.FC = () => {
           <div className={classes['collection__description']}>
             <img
               className={classes['collection__avatar']}
-              src="../assets/img/avatar-1.png"
+              src="../../assets/img/avatar-1.png"
               alt="Creator avatar"
             />
             <div className={classes['collection__creator']}>
@@ -49,22 +49,22 @@ export const HotCollections: React.FC = () => {
         </div>
         <div className={classNames(classes['collection'], classes['collection--2'])}>
           <img
-            src="../assets/img/collection-2-1.png"
+            src="../../assets/img/collection-2-1.png"
             alt="Collection 2 Item 1"
             className={classNames(classes['collection__img'], classes['collection__img--1'])}
           />
           <img
-            src="../assets/img/collection-2-2.png"
+            src="../../assets/img/collection-2-2.png"
             alt="Collection 2 Item 2"
             className={classNames(classes['collection__img'], classes['collection__img--2'])}
           />
           <img
-            src="../assets/img/collection-2-3.png"
+            src="../../assets/img/collection-2-3.png"
             alt="Collection 2 Item 3"
             className={classNames(classes['collection__img'], classes['collection__img--3'])}
           />
           <img
-            src="../assets/img/collection-2-4.png"
+            src="../../assets/img/collection-2-4.png"
             alt="Collection 2 Item 4"
             className={classNames(classes['collection__img'], classes['collection__img--4'])}
           />
@@ -74,7 +74,7 @@ export const HotCollections: React.FC = () => {
           <div className={classes['collection__description']}>
             <img
               className={classes['collection__avatar']}
-              src="../assets/img/avatar-1.png"
+              src="../../assets/img/avatar-1.png"
               alt="Creator avatar"
             />
             <div className={classes['collection__creator']}>
@@ -88,22 +88,22 @@ export const HotCollections: React.FC = () => {
         </div>
         <div className={classNames(classes['collection'], classes['collection--3'])}>
           <img
-            src="../assets/img/collection-3-1.png"
+            src="../../assets/img/collection-3-1.png"
             alt="Collection 3 Item 1"
             className={classNames(classes['collection__img'], classes['collection__img--1'])}
           />
           <img
-            src="../assets/img/collection-3-2.png"
+            src="../../assets/img/collection-3-2.png"
             alt="Collection 3 Item 2"
             className={classNames(classes['collection__img'], classes['collection__img--2'])}
           />
           <img
-            src="../assets/img/collection-3-3.png"
+            src="../../assets/img/collection-3-3.png"
             alt="Collection 3 Item 3"
             className={classNames(classes['collection__img'], classes['collection__img--3'])}
           />
           <img
-            src="../assets/img/collection-3-4.png"
+            src="../../assets/img/collection-3-4.png"
             alt="Collection 3 Item 4"
             className={classNames(classes['collection__img'], classes['collection__img--4'])}
           />
@@ -113,7 +113,7 @@ export const HotCollections: React.FC = () => {
           <div className={classes['collection__description']}>
             <img
               className={classes['collection__avatar']}
-              src="../assets/img/avatar-1.png"
+              src="../../assets/img/avatar-1.png"
               alt="Creator avatar"
             />
             <div className={classes['collection__creator']}>

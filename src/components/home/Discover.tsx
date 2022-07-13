@@ -2,10 +2,10 @@ import React from 'react';
 
 import classes from './Discover.module.scss';
 import classNames from 'classnames';
-import { Select } from '../components/Select';
-import { Button } from '../components/Button';
-import { InputRange } from '../components/InputRange';
-import { Card } from '../components/Card';
+import { Select } from '../Select';
+import { Button } from '../Button';
+import { InputRange } from '../InputRange';
+import { Card } from '../Card';
 
 const options = ['Recently added', 'One day ago', 'Two days ago', 'Week ago', 'Month ago'];
 const categories = ['All items', 'Art', 'Game', 'Photography', 'Music', 'Video'];
@@ -41,7 +41,7 @@ export const Discover: React.FC = () => {
             ))}
           </ul>
           <Button variant="primary">
-            Filter <img src="../assets/icons/cross.svg" alt="Cross Icon" />
+            Filter <img src="../../assets/icons/cross.svg" alt="Cross Icon" />
           </Button>
         </div>
         <div className={classes['discover__filter']}>
@@ -59,7 +59,7 @@ export const Discover: React.FC = () => {
         </div>
         <div className={classes['discover__loading']}>
           <Button variant="secondary">
-            Load more <img src="../assets/icons/loading.svg" alt="Loading Icon" />
+            Load more <img src="../../assets/icons/loading.svg" alt="Loading Icon" />
           </Button>
         </div>
       </div>

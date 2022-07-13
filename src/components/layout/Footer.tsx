@@ -2,7 +2,8 @@ import React from 'react';
 
 import classes from './Footer.module.scss';
 import classNames from 'classnames';
-import { Button } from '../components/Button';
+import { Button } from '../Button';
+import { Link } from 'react-router-dom';
 
 export const Footer: React.FC = () => {
   return (
@@ -10,7 +11,7 @@ export const Footer: React.FC = () => {
       <div className={classes['footer__body']}>
         <div className={classes['company']}>
           <div className={classes['company__name']}>
-            <img src="../assets/icons/logo.svg" alt="Logo" />
+            <img src="../../assets/icons/logo.svg" alt="Logo" />
             <div className="heading--body-1-bold">crypter</div>
           </div>
           <div className={classNames(classes['company__quote'], 'heading--body-1')}>
@@ -20,19 +21,41 @@ export const Footer: React.FC = () => {
         <div className={classes['links']}>
           <div className="heading--body-2-bold">Crypter.</div>
           <ul className={classes['links__list']}>
-            <li className={classNames(classes['links__item'], 'heading--button-2')}>Discover</li>
             <li className={classNames(classes['links__item'], 'heading--button-2')}>
-              Connect wallet
+              <Link to="/discover" className={classes['links__link']}>
+                Discover
+              </Link>
             </li>
-            <li className={classNames(classes['links__item'], 'heading--button-2')}>Create item</li>
+            <li className={classNames(classes['links__item'], 'heading--button-2')}>
+              <Link to="/connect-wallet" className={classes['links__link']}>
+                Connect wallet
+              </Link>
+            </li>
+            <li className={classNames(classes['links__item'], 'heading--button-2')}>
+              <Link to="/create-item" className={classes['links__link']}>
+                Create item
+              </Link>
+            </li>
           </ul>
         </div>
         <div className={classes['links']}>
           <div className="heading--body-2-bold">Info</div>
           <ul className={classes['links__list']}>
-            <li className={classNames(classes['links__item'], 'heading--button-2')}>Download</li>
-            <li className={classNames(classes['links__item'], 'heading--button-2')}>Demos</li>
-            <li className={classNames(classes['links__item'], 'heading--button-2')}>Support</li>
+            <li className={classNames(classes['links__item'], 'heading--button-2')}>
+              <Link to="/download" className={classes['links__link']}>
+                Download
+              </Link>
+            </li>
+            <li className={classNames(classes['links__item'], 'heading--button-2')}>
+              <Link to="/demos" className={classes['links__link']}>
+                Demos
+              </Link>
+            </li>
+            <li className={classNames(classes['links__item'], 'heading--button-2')}>
+              <Link to="support" className={classes['links__link']}>
+                Support
+              </Link>
+            </li>
           </ul>
         </div>
         <div className={classes['newsletter']}>
@@ -42,7 +65,7 @@ export const Footer: React.FC = () => {
           </p>
           <Button variant="secondary">
             Enter your email
-            <img src="../assets/icons/arrow-right.svg" alt="Arrow right" />
+            <img src="../../assets/icons/arrow-right.svg" alt="Arrow right" />
           </Button>
         </div>
       </div>
@@ -52,7 +75,7 @@ export const Footer: React.FC = () => {
         </p>
         <p className={classNames(classes['cookies'], 'heading--caption-2')}>
           <span>We use cookies for better service.</span>
-          <a href="#">Accept</a>
+          <a href="src/components/layout/Footer#">Accept</a>
         </p>
       </div>
     </footer>

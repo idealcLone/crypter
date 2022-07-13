@@ -1,7 +1,7 @@
 import React from 'react';
 
 import classes from './CTA.module.scss';
-import { Button } from '../components/Button';
+import { Button } from '../Button';
 import classNames from 'classnames';
 
 export const CTA: React.FC = () => {

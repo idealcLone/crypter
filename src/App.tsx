@@ -1,14 +1,9 @@
 import React from 'react';
-import { Navbar } from './layout/Navbar';
-import { Header } from './layout/Header';
-import { Auction } from './layout/Auction';
-import { Feed } from './layout/Feed';
-import { TopCreators } from './layout/TopCreators';
-import { HotBid } from './layout/HotBid';
-import { HotCollections } from './layout/HotCollections';
-import { Discover } from './layout/Discover';
-import { CTA } from './layout/CTA';
-import { Footer } from './layout/Footer';
+import { Navbar } from './components/layout/Navbar';
+import { Header } from './components/layout/Header';
+import { Footer } from './components/layout/Footer';
+import { Route, Routes } from 'react-router-dom';
+import { ROUTES } from './consts/routes';
 
 export const App: React.FC = () => {
   return (
@@ -16,13 +11,11 @@ export const App: React.FC = () => {
       <Navbar />
       <div className="divider" />
       <Header />
-      <Auction />
-      <Feed />
-      <TopCreators />
-      <HotBid />
-      <HotCollections />
-      <Discover />
-      <CTA />
+      <Routes>
+        {ROUTES.map((route) => (
+          <Route key={route.path} path={route.path} element={route.component} />
+        ))}
+      </Routes>
       <Footer />
     </>
   );
