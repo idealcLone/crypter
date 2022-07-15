@@ -4,12 +4,23 @@ import classes from './Navbar.module.scss';
 import { Button } from '../Button';
 import classnames from 'classnames';
 import { SearchBar } from '../SearchBar';
+import { useNavigate } from 'react-router-dom';
 
 export const Navbar = () => {
+  const navigate = useNavigate();
+
+  const handleLogoClick = () => {
+    navigate('/');
+  };
+
+  const handleUploadClick = () => {
+    navigate('/upload');
+  };
+
   return (
     <nav className={classes['navbar']}>
       <div className={classes['left-content']}>
-        <div className={classes['logo-box']}>
+        <div className={classes['logo-box']} onClick={handleLogoClick}>
           <img src="../../assets/icons/logo.svg" alt="Logo" className={classes['logo']} />
           <div className="heading heading--body-1-bold">crypter</div>
         </div>
@@ -42,8 +53,12 @@ export const Navbar = () => {
           />
         </div>
         <div className={classes['buttons']}>
-          <Button variant="primary">Upload</Button>
-          <Button variant="secondary">Connect Wallet</Button>
+          <Button variant="primary" onClick={handleUploadClick}>
+            Upload
+          </Button>
+          <Button variant="secondary" onClick={handleUploadClick}>
+            Connect Wallet
+          </Button>
         </div>
       </div>
     </nav>

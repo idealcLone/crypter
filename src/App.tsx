@@ -10,7 +10,6 @@ export const App: React.FC = () => {
     <>
       <Navbar />
       <div className="divider" />
-      <Header />
       <Routes>
         {ROUTES.map((route) => (
           <Route key={route.path} path={route.path} element={route.component} />

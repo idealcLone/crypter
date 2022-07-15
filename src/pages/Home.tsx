@@ -6,10 +6,12 @@ import { HotBid } from '../components/home/HotBid';
 import { HotCollections } from '../components/home/HotCollections';
 import { Discover } from '../components/home/Discover';
 import { CTA } from '../components/home/CTA';
+import { Header } from '../components/layout/Header';
 
 export const Home: React.FC = () => {
   return (
     <main>
+      <Header />
       <Auction />
       <Feed />
       <TopCreators />

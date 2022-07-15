@@ -4,6 +4,7 @@ import classes from './Button.module.scss';
 
 type PropsType = {
   variant: string;
+  onClick: () => void;
   className?: string;
   size?: string;
   children: React.ReactNode;
@@ -11,6 +12,7 @@ type PropsType = {
 
 export const Button: React.FC<PropsType> = ({
   variant,
+  onClick,
   className = 'button-2',
   size = 'md',
   children,
@@ -23,6 +25,7 @@ export const Button: React.FC<PropsType> = ({
         classes[`btn--${size}`],
         `heading--${className}`
       )}
+      onClick={onClick}
     >
       {children}
     </button>

@@ -3,9 +3,15 @@ import React from 'react';
 import classes from './Footer.module.scss';
 import classNames from 'classnames';
 import { Button } from '../Button';
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 
 export const Footer: React.FC = () => {
+  const navigate = useNavigate();
+
+  const handleNewsletterButton = () => {
+    navigate('/');
+  };
+
   return (
     <footer className={classes['footer']}>
       <div className={classes['footer__body']}>
@@ -63,7 +69,7 @@ export const Footer: React.FC = () => {
           <p className={classNames(classes['newsletter__description'], 'heading--caption-1')}>
             Subscribe our newsletter to get more free design course and resource
           </p>
-          <Button variant="secondary">
+          <Button variant="secondary" onClick={handleNewsletterButton}>
             Enter your email
             <img src="../../assets/icons/arrow-right.svg" alt="Arrow right" />
           </Button>

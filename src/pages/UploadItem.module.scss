@@ -1,0 +1,69 @@
+@use '../assets/sass/mixins';
+
+.upload {
+  &__header {
+    @include mixins.container;
+
+    padding: 2.4rem 0;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__path {
+    display: flex;
+    align-items: center;
+    gap: 3.3rem;
+
+    & > div {
+      cursor: pointer;
+    }
+
+    &--previous {
+      color: var(--color-neutral-4);
+    }
+  }
+
+  &__title {
+    margin-bottom: 1.6rem;
+  }
+
+  &__body {
+    border-top: 1px solid var(--color-neutral-6);
+    border-bottom: 1px solid var(--color-neutral-6);
+    padding: 8rem calc((100% - 73.6rem) / 2) 13.6rem;
+    text-align: center;
+  }
+
+  &__description {
+    color: var(--color-neutral-4);
+    margin-bottom: 8rem;
+
+    span {
+      color: var(--color-neutral-2);
+    }
+  }
+
+  &__options {
+    display: flex;
+    gap: 3.2rem;
+    margin-bottom: 3.2rem;
+  }
+
+  &__option {
+    padding: 1.6rem;
+    border: 1px solid var(--color-neutral-6);
+    border-radius: 16px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.6rem;
+
+    img {
+      height: 25.6rem;
+    }
+  }
+
+  &__privacy {
+    color: var(--color-neutral-4);
+  }
+}
