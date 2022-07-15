@@ -1,9 +1,9 @@
 import React from 'react';
 
 import classes from './Navbar.module.scss';
-import { Button } from '../Button';
+import { Button } from '../UI/Button';
 import classnames from 'classnames';
-import { SearchBar } from '../SearchBar';
+import { SearchBar } from '../UI/SearchBar';
 import { useNavigate } from 'react-router-dom';
 
 export const Navbar = () => {

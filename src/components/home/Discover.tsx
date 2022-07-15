@@ -2,10 +2,10 @@ import React from 'react';
 
 import classes from './Discover.module.scss';
 import classNames from 'classnames';
-import { Select } from '../Select';
-import { Button } from '../Button';
-import { InputRange } from '../InputRange';
-import { Card } from '../Card';
+import { Select } from '../UI/Select';
+import { Button } from '../UI/Button';
+import { InputRange } from '../UI/InputRange';
+import { Card } from '../UI/Card';
 
 const options = ['Recently added', 'One day ago', 'Two days ago', 'Week ago', 'Month ago'];
 const categories = ['All items', 'Art', 'Game', 'Photography', 'Music', 'Video'];

@@ -3,7 +3,7 @@ import React from 'react';
 import classes from './HotBid.module.scss';
 import classNames from 'classnames';
 import { IBid } from '../../ts/interfaces';
-import { Slider } from '../Slider';
+import { Slider } from '../UI/Slider';
 
 const bids: IBid[] = [
   {

@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 
 import classes from './TopCreators.module.scss';
 import classNames from 'classnames';
-import { Slider } from '../Slider';
+import { Slider } from '../UI/Slider';
 
 const data = [
   {

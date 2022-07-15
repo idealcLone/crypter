@@ -1,18 +1,23 @@
 .select {
-  label {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 1.2rem;
+
+  &__label {
     display: block;
     color: var(--color-neutral-5);
-    margin-bottom: 1.2rem;
   }
 
-  select {
+  &__select {
     width: 100%;
     padding: 1.2rem 5rem 1.2rem 1.6rem;
     border: 2px solid var(--color-neutral-6);
     border-radius: 12px;
     outline: none;
     appearance: none;
-    background: url(../assets/icons/dropdown-icon.svg) no-repeat right;
+    background: url(../../assets/icons/dropdown-icon.svg) no-repeat right;
     background-position-x: calc(100% - 1rem);
     cursor: pointer;
   }

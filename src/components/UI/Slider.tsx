@@ -48,7 +48,7 @@ export const Slider: React.FC<PropsType> = ({ step = 1, className, children }) =
     <div className={classNames(className, classes['slider'])}>
       {currentIndex > step - 1 && (
         <img
-          src="../assets/icons/arrow-left.svg"
+          src="../../assets/icons/arrow-left.svg"
           alt="Arrow left"
           className={classes['slider__left']}
           onClick={handleLeftArrowClick}
@@ -61,7 +61,7 @@ export const Slider: React.FC<PropsType> = ({ step = 1, className, children }) =
       </div>
       {currentIndex + step + 2 < (children as [])?.length && (
         <img
-          src="../assets/icons/arrow-right.svg"
+          src="../../assets/icons/arrow-right.svg"
           alt="Arrow right"
           className={classes['slider__right']}
           onClick={handleRightArrowClick}

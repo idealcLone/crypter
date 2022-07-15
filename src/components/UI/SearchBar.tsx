@@ -5,7 +5,11 @@ export const SearchBar: React.FC = () => {
   return (
     <div className={classes['search-bar']}>
       <input type="text" className={classes['search-input']} placeholder="Search" />
-      <img src="../assets/icons/search.svg" alt="Search Icon" className={classes['search-icon']} />
+      <img
+        src="../../assets/icons/search.svg"
+        alt="Search Icon"
+        className={classes['search-icon']}
+      />
     </div>
   );
 };

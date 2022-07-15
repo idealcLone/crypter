@@ -1,6 +1,6 @@
 import React from 'react';
 import classes from './UploadItem.module.scss';
-import { Button } from '../components/Button';
+import { Button } from '../components/UI/Button';
 import { useNavigate } from 'react-router-dom';
 import classNames from 'classnames';
 
@@ -12,15 +12,15 @@ export const UploadItem: React.FC = () => {
   };
 
   const handleCurrentPathButton = () => {
-    navigate('/upload-item');
+    navigate('/upload');
   };
 
-  const handleSingleUploadButton = () => {
-    navigate('/upload-item/single');
+  const handleSingleCreateButton = () => {
+    navigate('/create/single');
   };
 
-  const handleMultipleUploadButton = () => {
-    navigate('/upload-item/multiple');
+  const handleMultipleCreateButton = () => {
+    navigate('/create/multiple');
   };
 
   return (
@@ -48,13 +48,13 @@ export const UploadItem: React.FC = () => {
         <div className={classes['upload__options']}>
           <div className={classes['upload__option']}>
             <img src="../assets/img/create-single.png" alt="Create Single" />
-            <Button variant="secondary" onClick={handleSingleUploadButton}>
+            <Button variant="secondary" onClick={handleSingleCreateButton}>
               Create Single
             </Button>
           </div>
           <div className={classes['upload__option']}>
             <img src="../assets/img/create-multiple.png" alt="Create Multiple" />
-            <Button variant="primary" onClick={handleMultipleUploadButton}>
+            <Button variant="primary" onClick={handleMultipleCreateButton}>
               Create Multiple
             </Button>
           </div>

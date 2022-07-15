@@ -2,7 +2,7 @@ import React from 'react';
 
 import classes from './Footer.module.scss';
 import classNames from 'classnames';
-import { Button } from '../Button';
+import { Button } from '../UI/Button';
 import { Link, useNavigate } from 'react-router-dom';
 
 export const Footer: React.FC = () => {

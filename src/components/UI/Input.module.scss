@@ -1,0 +1,20 @@
+.input {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 1.2rem;
+  color: var(--color-neutral-5);
+
+  &__label {
+
+  }
+
+  &__input {
+    width: 100%;
+    padding: 1.2rem 1.6rem;
+    border-radius: 12px;
+    border: 2px solid var(--color-neutral-6);
+    outline: var(--color-neutral-6);
+  }
+}

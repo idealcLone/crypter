@@ -17,9 +17,9 @@ export const Card: React.FC<PropsType> = ({ img }) => {
         </div>
         <div className={classes['card__body']}>
           <div className={classes['card__creators']}>
-            <img src="../assets/img/avatar-1.png" alt="Creator 1" />
-            <img src="../assets/img/avatar-2.png" alt="Creator 2" />
-            <img src="../assets/img/avatar-3.png" alt="Creator 3" />
+            <img src="../../assets/img/avatar-1.png" alt="Creator 1" />
+            <img src="../../assets/img/avatar-2.png" alt="Creator 2" />
+            <img src="../../assets/img/avatar-3.png" alt="Creator 3" />
           </div>
           <div className={classNames(classes['card__count'], 'heading--caption-1-bold')}>
             3 in stock
@@ -28,7 +28,7 @@ export const Card: React.FC<PropsType> = ({ img }) => {
       </div>
       <div className={classes['card__footer']}>
         <div className={classes['card__highest-bid']}>
-          <img src="../assets/icons/candlesticks.svg" alt="Highest bid icon" />
+          <img src="../../assets/icons/candlesticks.svg" alt="Highest bid icon" />
           <span className="heading--caption-2">Highest bid</span>
           <span className="heading--caption-2-bold">0.001 ETH</span>
         </div>
